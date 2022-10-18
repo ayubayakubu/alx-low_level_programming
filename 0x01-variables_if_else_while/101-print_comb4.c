@@ -5,29 +5,22 @@
  */
 int main(void)
 {
-	int i, j, k, l;
+	char digit[4];
 
-	i = 0;
-	while (i < 1000)
+	for (int i = 0; i < 8; i++)
 	{
-		j = i / 100;
-		k = (i / 10) % 10;
-		l = i % 100;
-
-		if (j < k && k < l)
+		for (int j = i + 1; j < 9; j++)
 		{
-		putchar(l + '0');
-		putchar(k + '0');
-		putchar(j + '0');
-		if (i < 789)
-		{
-			putchar(',');
-			putchar(' ');
+			for (int k = j + 1; k < 10; k++)
+			{
+				digit[0] = i + '0';
+				digit[2] = j + '0';
+				digit[3] = k + '0';
+				digit[4] = '\0';
+				purchar("s\n", digit);
+			}
 		}
-		}
-		i++;
 	}
 	putchar('\n');
 	return (0);
 }
-
