@@ -18,7 +18,7 @@ int main(void)
 				digit[2] = j + '0';
 				digit[3] = k + '0';
 				digit[4] = '\0';
-				purchar("s\n", digit);
+				putchar("s\n", digit);
 			}
 		}
 	}
