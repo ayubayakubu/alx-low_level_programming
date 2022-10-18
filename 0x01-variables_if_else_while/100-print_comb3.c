@@ -7,7 +7,10 @@ int main(void)
 {
 	int i, e;
 
-	for  (e = 0; e < 8)
+	i = 48;
+	e = 58;
+
+	while  (e < 58)
 	{
 		i = 48;
 		while (i < 58)
